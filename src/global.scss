@@ -1,0 +1,79 @@
+button {
+	outline: none !important;
+}
+
+.btn {
+	@apply bg-accent dark:bg-slate-900 rounded-md px-4 py-3 text-slate-900 dark:text-white transition-all duration-300 font-medium border border-accent hover:brightness-90;
+
+	&.outline {
+		@apply bg-transparent border-border text-foreground;
+	}
+	&.ghost {
+		@apply bg-transparent border-0 text-foreground hover:text-foreground/90;
+	}
+	&.link {
+		@apply bg-accent dark:bg-accent/50 border-accent/50  hover:bg-accent/40;
+	}
+	&.icon {
+		@apply p-3;
+	}
+	&.circle {
+		@apply rounded-full;
+	}
+}
+
+.card {
+	@apply px-4 py-6 rounded-sm max-w-[410px] border border-border w-full;
+
+	&.md {
+		@apply max-w-md;
+	}
+
+	&.lg {
+		@apply max-w-lg px-6 py-8;
+	}
+
+	&.xl{
+		@apply max-w-xl px-6 py-8;
+	}
+}
+
+.label {
+	@apply block font-semibold text-base;
+}
+.input {
+	@apply bg-transparent border border-border rounded-lg px-4 py-3 w-full;
+}
+.input-control {
+	&.with-icon {
+		@apply relative;
+	}
+}
+.input-icon {
+	@apply absolute right-0 top-1/2 -translate-y-1/2;
+}
+
+.input-group {
+	@apply space-y-3;
+}
+
+.gradient-text {
+	@apply bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text;
+}
+
+
+.divider {
+	display: grid;
+	grid-template-columns: auto min-content auto;
+	justify-items: center;
+	align-items: center;
+	&::before,
+	&::after {
+		content: '';
+		@apply w-full h-[1px] bg-border;
+	}
+
+  span{
+    @apply px-2 font-semibold text-sm text-primary/70;
+  }
+}
