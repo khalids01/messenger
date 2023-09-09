@@ -1,6 +1,6 @@
 <script>
-	import Logo from '$lib/components/ui/Logo.svelte';
-	import ScrollArea from '$lib/components/ui/ScrollArea.svelte';
+	import Logo from '$lib/components/custom-ui/Logo.svelte';
+	import ScrollArea from '$lib/components/custom-ui/ScrollArea.svelte';
 </script>
 
 <aside class="w-72">

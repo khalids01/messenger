@@ -36,5 +36,9 @@ export const handle = (async ({ event, resolve }) => {
 		});
 	}
 
-	return await resolve(event);
+	return await resolve(event, {
+		filterSerializedResponseHeaders(name){
+			return name === "content-range"
+		}
+	});
 }) satisfies Handle;

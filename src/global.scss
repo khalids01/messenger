@@ -23,7 +23,7 @@ button {
 }
 
 .card {
-	@apply px-4 py-6 rounded-sm max-w-[410px] border border-border w-full;
+	@apply px-4 py-6 rounded-md max-w-[410px] border border-border w-full;
 
 	&.md {
 		@apply max-w-md;
@@ -54,7 +54,7 @@ button {
 }
 
 .input-group {
-	@apply space-y-3;
+	@apply space-y-2;
 }
 
 .gradient-text {
